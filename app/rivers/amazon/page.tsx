@@ -14,14 +14,17 @@ export default function AmazonPage() {
         </Link>
       </div>
 
-        {/* style */}
-      <section
-        className="relative min-h-[50vh] w-full bg-cover bg-center bg-no-repeat flex items-center justify-center"
-        style={{
-          backgroundImage:
-            "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/mohmed-nazeeh-jSgCHNQqEQ4-unsplash-U41ikgysoVCwUiSjOAWpFVZjmpVBxB.jpg')",
-        }}
-      >
+        {/* style */}<section
+  className="relative min-h-[50vh] w-full bg-cover bg-center bg-no-repeat flex items-center justify-center"
+  style={{
+    backgroundImage: "url('/amazon.jpg')",
+  }}
+>
+  <div className="text-center text-white">
+    <h1 className="text-4xl font-bold">Amazon River</h1>
+  </div>
+</section>
+
 
 
         <div className="text-center text-white px-4">
@@ -32,13 +35,13 @@ export default function AmazonPage() {
 
       <section className="container mx-auto max-w-6xl px-4 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-          <div className="prose prose-lg text-gray-800 leading-relaxed">
-            <p className="text-lg">
+          <div className="bg-gray-800/70 text-white rounded-lg p-6 shadow-lg">
+            <p className="text-lg leading-relaxed">
               The Amazon rainforest is home to the largest continuous stretch of tropical forest on Earth, producing
               about 20% of the planet's oxygen. Its dense vegetation regulates rainfall patterns, absorbs vast amounts
               of carbon dioxide, and sustains millions of species.
             </p>
-            <p className="text-lg mt-6">
+            <p className="text-lg mt-6 leading-relaxed">
               However, satellite observations of vegetation reveal alarming changes. Deforestation and human activities
               are reducing the forest cover, threatening biodiversity and weakening one of Earth's most important
               climate regulators.
