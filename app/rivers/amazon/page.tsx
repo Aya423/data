@@ -14,7 +14,15 @@ export default function AmazonPage() {
         </Link>
       </div>
 
-      <section className="relative min-h-[50vh] w-full bg-cover bg-center bg-no-repeat flex items-center justify-center" style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/mohmed-nazeeh-jSgCHNQqEQ4-unsplash-U41ikgysoVCwUiSjOAWpFVZjmpVBxB.jpg')", }}
+        {/* style */}
+      <section
+        className="relative min-h-[50vh] w-full bg-cover bg-center bg-no-repeat flex items-center justify-center"
+        style={{
+          backgroundImage:
+            "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/mohmed-nazeeh-jSgCHNQqEQ4-unsplash-U41ikgysoVCwUiSjOAWpFVZjmpVBxB.jpg')",
+        }}
+      >
+
 
         <div className="text-center text-white px-4">
           <h1 className="font-serif text-5xl md:text-7xl font-bold drop-shadow-2xl">Amazon River</h1>
