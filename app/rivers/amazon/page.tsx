@@ -36,36 +36,43 @@ export default function AmazonPage() {
           </p>
         </div>
       </section>
-{/* النص + الفيديو */}
-      <section className="container mx-auto max-w-7xl px-6 py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
-          {/* النص داخل مستطيل شفاف */}
-          <div className="bg-black/60 p-8 rounded-md flex items-center w-full">
-            <div>
-              <p className="text-white font-merri tracking-wide leading-relaxed">
-  The Amazon rainforest is home to the largest continuous stretch of tropical forest on Earth, 
-  producing about 20% of the planet's oxygen. Its dense vegetation regulates rainfall patterns, 
-  absorbs vast amounts of carbon dioxide, and sustains millions of species.
-</p>
+{/* النص + الفيديو */}<section className="container mx-auto max-w-7xl px-6 py-16">
+  {/* الأعمدة الكبيرة */}
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+    {/* النص */}
+    <div className="bg-black/60 p-8 rounded-md flex flex-col w-full">
+      <p className="text-white font-merri tracking-wide leading-relaxed">
+        The Amazon rainforest is home to the largest continuous stretch of tropical forest on Earth, 
+        producing about 20% of the planet's oxygen. Its dense vegetation regulates rainfall patterns, 
+        absorbs vast amounts of carbon dioxide, and sustains millions of species.
+      </p>
+      <p className="text-white font-merri mt-6 leading-relaxed">
+        However, satellite observations of vegetation reveal alarming changes. 
+        Deforestation and human activities are reducing the forest cover, 
+        threatening biodiversity and weakening one of Earth's most important climate regulators.
+      </p>
+    </div>
 
-<p className="text-white font-merri mt-6 leading-relaxed">
-  However, satellite observations of vegetation reveal alarming changes. 
-  Deforestation and human activities are reducing the forest cover, 
-  threatening biodiversity and weakening one of Earth's most important climate regulators.
-</p>
+    {/* الفيديو */}
+    <div className="border-8 border-yellow-400 rounded-lg shadow-xl p-2 bg-yellow-50 flex w-full">
+      <video className="w-full h-full rounded object-cover" autoPlay loop muted playsInline>
+        <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/amaz-FJ3DhyoGIMHhGhilvoL2JZy8RD9Sjr.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
 
-            </div>
-          </div>
-
-          {/* الفيديو */}
-          <div className="border-8 border-yellow-400 rounded-lg shadow-xl p-2 bg-yellow-50 flex w-full">
-            <video className="w-full h-full rounded object-cover" autoPlay loop muted playsInline>
-              <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/amaz-FJ3DhyoGIMHhGhilvoL2JZy8RD9Sjr.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
-      </section>
-    </main>
-  )
-}
+  {/* الخط + صندوق الصوت */}
+    {/* صندوق الصوت */}
+    <div className="mt-6 w-full lg:w-1/2">
+      <audio controls className="w-full rounded-lg">
+        <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/soothing-ocean-waves-372489-QYUbiCl8fA9JepkLdDY7K05lvbKcRe.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    
+  <div className="flex flex-col items-center mt-8">
+    {/* الخط */}
+    <div className="w-full border-t-2 border-gray-300"></div>
+  </div>
+</section>
