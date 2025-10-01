@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       fontFamily: {
         oswald: ['Oswald', 'sans-serif'],
+        merri: ['Merriweather', 'serif'],
       },
     },
     
