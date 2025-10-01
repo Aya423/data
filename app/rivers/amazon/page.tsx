@@ -5,27 +5,45 @@ import Link from "next/link"
 export default function AmazonPage() {
   return (
     <main className="min-h-screen bg-white">
-      <div className="sticky top-0 z-50 py-4 px-4 bg-white/50 backdrop-blur-sm">
-        <div className="container mx-auto flex justify-center">
-          <Link href="/" className="group">
-            <div className="bg-teal-100 rounded-3xl px-8 py-3 shadow-md hover:shadow-lg transition-shadow">
-              <h1 className="font-serif text-2xl md:text-3xl font-bold text-teal-800">Breathing Rivers</h1>
-            </div>
-          </Link>
-        </div>
+      <div className="fixed top-0 left-0 z-50 p-6">
+        <Link
+          href="/"
+          className="flex items-center bg-background/80 backdrop-blur-md rounded-full px-6 py-3 shadow-lg border border-border transition-all duration-500 ease-in-out hover:bg-background/90 hover:scale-105"
+        >
+          <h2 className="font-serif text-sm font-bold text-primary tracking-wider">Breathing Rivers</h2>
+        </Link>
       </div>
 
-      <section className="container mx-auto max-w-6xl px-4 py-12">
-        <div className="flex flex-col md:flex-row gap-8 items-start">
-          {/* Left side - Text content area */}
-          <div className="flex-1">
-            <h1 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-gray-900">Amazon River</h1>
-            <div className="prose prose-lg max-w-none text-gray-700">{/* Text content will be added here */}</div>
+      <section
+        className="relative min-h-[50vh] w-full bg-cover bg-center bg-no-repeat flex items-center justify-center"
+        style={{
+          backgroundImage:
+            "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/mohmed-nazeeh-jSgCHNQqEQ4-unsplash-U41ikgysoVCwUiSjOAWpFVZjmpVBxB.jpg')",
+        }}
+      >
+        <div className="text-center text-white px-4">
+          <h1 className="font-serif text-5xl md:text-7xl font-bold drop-shadow-2xl">Amazon River</h1>
+          <p className="text-xl md:text-2xl mt-4 drop-shadow-lg">The Largest River in the World</p>
+        </div>
+      </section>
+
+      <section className="container mx-auto max-w-6xl px-4 py-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+          <div className="prose prose-lg text-gray-800 leading-relaxed">
+            <p className="text-lg">
+              The Amazon rainforest is home to the largest continuous stretch of tropical forest on Earth, producing
+              about 20% of the planet's oxygen. Its dense vegetation regulates rainfall patterns, absorbs vast amounts
+              of carbon dioxide, and sustains millions of species.
+            </p>
+            <p className="text-lg mt-6">
+              However, satellite observations of vegetation reveal alarming changes. Deforestation and human activities
+              are reducing the forest cover, threatening biodiversity and weakening one of Earth's most important
+              climate regulators.
+            </p>
           </div>
 
-          {/* Right side - Video */}
-          <div className="flex-1">
-            <video className="w-full rounded-lg shadow-2xl" autoPlay loop muted playsInline>
+          <div className="border-8 border-yellow-400 rounded-lg shadow-xl p-2 bg-yellow-50">
+            <video className="w-full rounded" autoPlay loop muted playsInline>
               <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/amaz-FJ3DhyoGIMHhGhilvoL2JZy8RD9Sjr.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
